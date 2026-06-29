@@ -1,5 +1,7 @@
 // Smooth scroll navigation
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from "@vercel/analytics"
+
+inject()
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
